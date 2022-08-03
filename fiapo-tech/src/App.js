@@ -1,10 +1,10 @@
 import './App.css';
+import Home from './Telas/Home';
 
 function App() {
-  console.log("oi");
   return (
     <div className="App">
-      <h1> oi</h1>
+      <Home/>
     </div>
   );
 }
