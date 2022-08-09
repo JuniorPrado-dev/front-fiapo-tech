@@ -1,10 +1,11 @@
 import './App.css';
-import Home from './Telas/Home';
+import Rotas from './components/Rotas';
+import HomePage from './componentsPages/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <HomePage/>
     </div>
   );
 }
