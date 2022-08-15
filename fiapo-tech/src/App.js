@@ -1,10 +1,11 @@
 import './App.css';
-import Home from './Telas/Home';
+import MyRoutes from './RoutesNavigation/MyRoutes';
+
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <MyRoutes/>
     </div>
   );
 }
