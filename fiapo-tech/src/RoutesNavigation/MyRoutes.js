@@ -3,14 +3,14 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import HomePage from "../componentsPages/HomePage";
 import LoginPage from "../componentsPages/LoginPage";
 
-const Rotas = () => {
+const MyRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/login" element={<LoginPage />}/>
+                <Route path="/" element={<HomePage/>} />
+                <Route path="/login" element={<LoginPage/>}/>
             </Routes>
         </BrowserRouter>
     )
 }
-export default Rotas;
+export default MyRoutes;
