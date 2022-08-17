@@ -1,5 +1,12 @@
 import styled from "styled-components"
 
+export const HomeP = styled.div`
+    background: lightcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    `
 export const HomeHeader = styled.header`
     position: sticky;
     top: 0;
@@ -33,7 +40,7 @@ export const InfoLandP = styled.section`
     border-top:0.3vw solid darkorange ;
     display: flex;
     align-items: center;
-    justify-content: stretch;
+    justify-content: space-around;
 `
 
 export const TextLandP = styled.div`
@@ -43,6 +50,31 @@ export const TextLandP = styled.div`
     flex-direction: column;
     align-items: center;
     margin:0 1vw 0 1vw;
+    background-color: rgb(148,0,211,0.25);
+    border-radius: 1vw;
+
+    h1{
+        text-shadow:0.2vw 0.3vw 0.2vw black;
+        color: darkviolet;
+        font-size: 5vw;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    p{  
+        font-size: 2vw;
+        text-align: justify;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 1vw;
+
+    }
+`
+export const ContactLandP = styled.div`
+    display: flex;
+    box-shadow: 0.5vw 0.6vw 2vw;
+    padding: 10px 0 10px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    margin:5vw 0 3vw 0;
     background-color: rgb(148,0,211,0.25);
     border-radius: 1vw;
 

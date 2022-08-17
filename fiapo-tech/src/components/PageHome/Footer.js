@@ -9,7 +9,6 @@ const Footer=()=>{
     return (
         <S.HomeFooter>
             <img src={logo} alt="logo da Fiapo Tech"/>
-           
         </S.HomeFooter>
     )
 }

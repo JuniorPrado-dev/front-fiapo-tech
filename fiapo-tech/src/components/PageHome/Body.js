@@ -31,6 +31,11 @@ const Body = () => {
                 </S.TextLandP>
                 <S.ImgLandP src={imgMul} />
             </S.InfoLandP>
+            <S.InfoLandP>
+                <S.ContactLandP>
+                    <h1>Nossos Contatos!</h1>
+                </S.ContactLandP>
+            </S.InfoLandP>
         </>
     )
 
