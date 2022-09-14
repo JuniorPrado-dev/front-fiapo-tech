@@ -70,7 +70,7 @@ export const TextLandP = styled.div`
 export const ContactLandP = styled.div`
     display: flex;
     box-shadow: 0.5vw 0.6vw 2vw;
-    padding: 10px 0 10px 0;
+    padding: 10px 10px 10px 10px;
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
@@ -91,7 +91,27 @@ export const ContactLandP = styled.div`
         margin: 1vw;
 
     }
+    
+    `
+export const Contato = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: stretch;
+    img{
+        width: 5vw;
+    }
 `
+export const CardContact = styled.div`
+    display: flex;
+    align-items: center;
+    margin: 2vw 0 0 0;
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+`
+
 export const ImgLandP = styled.img`
     width: 44%;
     margin: 1vw;
