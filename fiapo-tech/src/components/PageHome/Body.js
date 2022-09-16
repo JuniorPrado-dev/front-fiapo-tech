@@ -5,9 +5,10 @@ import imgCort from "../../images/imgCort.jpg"
 import imgInst from "../../images/icons/icon_instagram.png"
 import imgWhatsapp from "../../images/icons/icon_whatsapp.png"
 import imgMul from "../../images/imgMulherSorrindo.jpg"
-import {Link, useNavigate} from "react-router-dom" 
+import {Link} from "react-router-dom" 
+import Form from "./Form";
 const Body = () => {
-    const navigate=useNavigate();
+  //  const navigate=useNavigate();
     return (
         <>
             <S.InfoLandP>
@@ -34,27 +35,9 @@ const Body = () => {
                 <S.ImgLandP src={imgMul} />
             </S.InfoLandP>
             <S.InfoLandP>
-                <S.ContactLandP>
-                    <h1>Nossos Contatos!</h1>
-                    <S.Contato>
-                        <S.CardContact>
-                        <img src={imgWhatsapp} alt="imagem Whapsapp"></img>
-                            <div>
-                                <p>(88) 9.9917-5961 |(88) 9.9359-1208 |</p>
-                                <p>(88) 9.9658-5909 </p>
-                            </div>
-                        </S.CardContact>
-                        <S.CardContact>
-                        <img src={imgInst} alt="imagen instagran"></img>
-                            <div>
-                            <a href="https://instagram.com/fiapotech?igshid=YmMyMTA2M2Y="><p>@fiapotech</p></a>
-                            </div>
-                        </S.CardContact>
-                        
-                    </S.Contato>
-                    
-                </S.ContactLandP>
+                <Form/>
             </S.InfoLandP>
+            
         </>
     )
 
