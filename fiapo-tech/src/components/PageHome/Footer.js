@@ -1,8 +1,5 @@
 import React from "react";
 import * as S from "../../Styled"
-import * as N from "../../RoutesNavigation/Coodenator"
-import logo from "../../images/logoFiapoW.png"
-import { useNavigate } from "react-router-dom";
 import iconWhats from "../../images/icons/icon_whatsapp.png"
 import iconInsta from "../../images/icons/icon_instagram.png"
 

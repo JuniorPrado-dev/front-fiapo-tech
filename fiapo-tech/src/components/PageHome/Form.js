@@ -45,8 +45,8 @@ export default function Form() {
                 "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
             }
         }).then((response) => {
-            alert("Pedido realizado!")
-            console.log(response)
+            alert("Pedido enviado!")
+            return(response)
         }).catch((err) => {
             alert("algo deu errado =( Tente novamente mais tarde!")
             console.log(err)

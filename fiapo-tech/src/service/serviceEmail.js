@@ -1,6 +1,7 @@
 // const { response } = require('express');
 const nodemailer=require('nodemailer');
 module.exports=(name,email,tel,message,file)=>{
+    const dataPedido=new Date();
     const smtp=nodemailer.createTransport({
         host:'smtp.office365.com',
         port:587,
@@ -14,7 +15,7 @@ module.exports=(name,email,tel,message,file)=>{
     const mail={
         from:"Assistente <fiapo.assistente@hotmail.com>",
         to:'fiapotech@gmail.com',
-        subject:"novo pedido!",
+        subject:`Novo pedido! (${dataPedido.getDate()})`,
         text:`
         Cliente: ${name}
         Email: ${email}
@@ -34,17 +35,24 @@ module.exports=(name,email,tel,message,file)=>{
             }
             )
     }
-    return new Promise((resolve,reject)=>{
-        smtp.sendMail(mail)
-        .them(response=>{
-            smtp.close();
-            return resolve(response);
+    // return new Promise((resolve,reject)=>{
+        smtp.sendMail(mail,(err,result)=>{
+            if(err){
+                console.log(err);
+                return(err)
+            }else{
+                return(result)
+            }
         })
-        .catch(error=>{
-            smtp.close();
-            return reject(error);
-        })
-    })
+    //     .them(response=>{
+    //         smtp.close();
+    //         return resolve(response);
+    //     })
+    //     .catch(error=>{
+    //         smtp.close();
+    //         return reject(error);
+    //     })
+    // })
 }
 
 
