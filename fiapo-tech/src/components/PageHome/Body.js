@@ -2,10 +2,13 @@ import React from "react";
 import * as S from "../../Styled"
 import imgCost from "../../images/costureiraSorrindo2.jpg"
 import imgCort from "../../images/imgCort.jpg"
+import imgInst from "../../images/icons/icon_instagram.png"
+import imgWhatsapp from "../../images/icons/icon_whatsapp.png"
 import imgMul from "../../images/imgMulherSorrindo.jpg"
 import {Link} from "react-router-dom" 
+import Form from "./Form";
 const Body = () => {
-
+  //  const navigate=useNavigate();
     return (
         <>
             <S.InfoLandP>
@@ -32,10 +35,9 @@ const Body = () => {
                 <S.ImgLandP src={imgMul} />
             </S.InfoLandP>
             <S.InfoLandP>
-                <S.ContactLandP>
-                    <h1>Nossos Contatos!</h1>
-                </S.ContactLandP>
+                <Form/>
             </S.InfoLandP>
+            
         </>
     )
 
