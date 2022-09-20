@@ -40,9 +40,9 @@ export default function Form() {
             console.log(key, formData.get(key))
         }
 
-        axios.post('/send', formData, {
+        axios.post('http://54.94.134.241:3030/send', formData, {
             headers: {
-                "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
+                "Content-Type": `multipart/form-data; boundary=<calculated when request is sent>`,
             }
         }).then((response) => {
             alert("Pedido enviado!")
